@@ -1,0 +1,251 @@
+<DOCTYPE html></DOCTYPE>
+    <html>
+        <head>
+            <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+            <meta charset="utf-8">
+            <title>WeHelp申請</title>
+            <style>
+                body{
+                    margin:0;
+                    
+                }
+                .logo{
+                    width: 50px;
+                    height: 50px;
+                    margin-right:auto;
+                    border-radius:70%;
+                }
+                nav{
+                    display:flex;
+                    position:relative;
+                    align-items: center;
+                    padding: 0px 10%;
+                    justify-content: space-between;
+                    background-color: #525252;
+
+                    
+                }
+                .img{
+                    width: 50px;
+                    height:50px;
+                    border-radius:80%;
+                    cursor:pointer;
+                    margin-left:20px;
+                }
+                ul li{
+                    padding:20px;
+                    display:inline-block ;
+                    
+                }
+                li a{
+                    text-decoration: none;
+                    color:white;
+                }
+                .menu{
+                    position:absolute;
+                    background-color: #d3d3d0;
+                    width:230px;
+                    right:0%;
+                    top:100%;
+                    border-radius:2%;
+                    max-height: 0px;
+                    overflow: hidden;
+                }
+                .menu-open{
+                    max-height:400px;
+                }
+                .link{
+                    display: flex;
+                    text-decoration: none;
+                    align-items: center;
+                    margin: 3px;
+                    color: #525252;
+                }
+                .link p{
+                    width:100%
+                }
+                .link img{
+                    width: 30px;
+                    height: 30px;
+                    border-radius:50%;
+                    padding: 5px;
+                    margin-right: 10px;
+                }
+                .link span{
+                    font-size:18px;
+                    transform: transform 0.5s;
+                }
+                .link:hover span{
+                    transform: translateX(3px);
+                }
+                .link:hover p{
+                    font-weight: 600;
+                }
+                .background{
+                    width:100%;
+                    height:100%;
+                }
+                .blog{
+                    margin:auto;
+                    width:70%;
+                    background-color: rgb(253, 254, 255);
+                    margin-top: 10px;
+                    
+                }
+                p{
+                    margin:auto;
+                    width:80%;
+                    text-align:start;
+                    margin-left: 0px;
+                    background:#e4e4e3;
+                    font-size:18px;
+                    letter-spacing: 1px;
+                    line-height:30px;
+                }
+                .site{
+                    
+                    font-weight: bold;
+                    font-size: 25px;
+                }
+                .site-one{
+                    font-weight: bold;
+                    font-size: 25px;
+                    margin-top:10px;
+                }
+                hr{
+                    width: 80%;
+                    float: left;
+                }
+                .work {
+                    
+                    display:flex;
+                    margin:auto;
+                    width:120%;
+                }
+                .work2{
+                    display:flex;
+                    
+                    margin:auto;
+                    width:120%;
+                    display:none;
+                }
+                .father{
+                    
+                    width:30%
+                }
+                .word{
+                    background:#f5f5f4;
+                    font-size:18px;
+                    letter-spacing: 1px;
+                    width:60%;
+                }
+                .content{
+                    display:flex;
+                    justify-content:start;
+                    
+                    
+                }
+            
+            </style>
+        </head>
+
+        <body>
+            <div class="DIV">
+                <nav>
+                        <img src="LOGO.png" class="logo"/>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="index2.html">ABOUT ME</a></li>
+                        <li><a href="index3.html">WORK</a></li>
+                    </ul>
+
+                        <img src="55555555.jpg" class="img" onclick="dillon();"/>
+                        
+                        <div class="menu" id="dillonOpen">
+
+                            <a href="#" class="link">
+                                    <img src="facebook.png" width="30px" height="30px">
+                                    <p>facebook</p>
+                                    <span>></span>
+                            </a>
+                            <a href="#" class="link">
+                                    <img src="instagram.png" width="30px" height="30px">
+                                    <p>instagram</p>
+                                    <span>></span>
+                            </a>
+                            <a href="#" class="link">
+                                    <img src="setting.png" >
+                                    <p>setting</p>
+                                    <span>></span>
+                            </a>
+                        </div>
+                </nav>
+            </div>
+            
+            <div class="blog">
+                <div class="site" >專案</div> 
+                <hr/>
+                <br>
+                <div class="work" id="next">
+                        <div class="father">
+                            <p style="background-color: white;">這是我剛開始學的時候,試著做出一個靜態網頁,對於<span style="color:red">flex切版</span>還有外部<span style="color:red">margin</span>到<span style="color:red">padding</span>更加的掌握.                     
+                            </p>
+                            <br>
+                            <p style="background-color: white;color:rgb(168, 90, 168); font-weight:bold; ">Html 、 Css</p>
+                            <br>
+                            <div ><button onclick="next();">Next</button></div>
+                        </div>
+                    <img src="work.png"width=30% height=30% style="margin-left:90px;" />
+                </div>
+
+                
+                <div class="work2" id="back">
+                    <div class="father">
+                        <p style="background-color: white;">
+                    這是我練習<span style="color:red">JavaScript DOM</span>的小專案,能夠讓使用者添加待辦任務完成之後可以刪除,實現動態網頁的應用,讓我對<span style="color:red">DOM</span>的掌控更加了解以及對<span style="color:red">Css</span>的熟悉度.
+                        </p>
+                        <br>
+                        <p style="background-color: white;color:rgb(168, 90, 168); font-weight:bold;">JavaScript DOM</p>
+                        <br>
+                        <button onclick="back();">back</button>
+                    </div>
+                <img src="list.png"width=30% height=30% style="margin-left:90px;" />
+                </div>
+
+                <div class="site-one">開發時的技術心得</div>
+                <hr/>
+                <br>
+<div class="content">              
+                <p class="word">在開發一個專案的時候,常常會有不熟悉的編程技術、基層邏輯,寫起來結構不是很良好,不過一次又一次排除錯誤之後我的經驗也在每一次中吸收成長,
+                    過程中學會有效率的解決問題、複習每個背後的邏輯，也慢慢對時間上有所掌控，自身也越來越有信心，因為我認為距離成功最快的捷徑就是學習，最重要的是在每一個過程中有所吸收，相信長時間的積累與耐心是有所成長的.
+                </p>
+                </div>
+</div>
+
+                        <script>
+                            function dillon(){
+                                let dillonOpen = document.getElementById("dillonOpen");
+                                dillonOpen.classList.toggle("menu-open");
+                            }
+                        </script>
+
+                        <script>
+                            function next(){
+                                let button = document.querySelector("#next");
+                                let buttonTwo = document.querySelector("#back");
+                                button.style.display="none";
+                                buttonTwo.style.display="block";
+
+                                buttonTwo.style.display="flex";
+                            }
+                            function back(){
+                                let button = document.querySelector("#next");
+                                let buttonTwo = document.querySelector("#back");
+                                button.style.display="block";
+                                buttonTwo.style.display="none";
+
+                                button.style.display="flex";
+                            }
+                        </script>
+        </body>
+    </html>
